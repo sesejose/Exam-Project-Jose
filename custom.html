@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entremasas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/yyj8tak.css" />
+  </head>
+
+  <body class="wrapper">
+
+    <header class="main-container-header header_bg_content">
+      <div class="container-nav">
+      <div class="container">
+        <nav>
+          <div class="icons-nav">
+            <div class="cart">
+              <a class="icon" href="cart.html">
+                <img src="media/svg/bag.svg" alt="Icon Menu" />
+              </a>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <a class="icon" onclick="openmenumobile()">
+              <img src="media/svg/bars-solid.svg" alt="Icon Menu" />
+            </a>
+          </div>
+          <!-- </div> -->
+
+          <div id="logo" class="logo">
+            <!-- <a href="index.html" class="logo"><span>Entremasas</span></a> -->
+            <a href="index.html"><img src="media/svg/logo.svg" alt="Logo" /></a>
+          </div>
+
+          <ul id="mainmenu">
+            <!--Mobile-->
+            <li><a href="combos.html" class="mainmenu">Combos</a></li>
+            <li>
+              <a href="custom.html" class="mainmenu">Custom your order</a>
+            </li>
+            <li>
+              <a href="our-specialty.html" class="mainmenu">Our specialty</a>
+            </li>
+            <li>
+              <a href="ordering-process.html" class="mainmenu"
+                >Ordering process</a
+              >
+            </li>
+            <li><a href="our-story.html" class="mainmenu">Our story</a></li>
+            <li><a href="cart.html" class="mainmenu">Cart</a></li>
+            <li><a href="blog.html" class="mainmenu">Blog</a></li>
+          </ul>
+
+          <ul id="menu">
+            <!--Desktop-->
+            <li><a href="combos.html" class="menu">Combos</a></li>
+            <li><a href="custom.html" class="menu">Custom your order</a></li>
+            <li>
+              <a href="ordering-process.html" class="menu">Ordering process</a>
+            </li>
+          </ul>
+          <ul id="menu2">
+            <li>
+              <a href="our-specialty.html" class="menu">Our specialty</a>
+            </li>
+            <li><a href="our-story.html" class="menu">Our story</a></li>
+            <li><a href="blog.html" class="menu">Blog</a></li>
+            <li>
+              <a class="icon menu" href="cart.html">
+                <img src="media/svg/bag.svg" alt="Icon Menu"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Conainer Ends-->
+
+      </div>
+    </div>
+    </header>
+
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="heading center-text">
+            <h1>Custom your order</h1>
+            <div class="custom-page-single-products mtb">
+              <div class="single-products">
+                <img
+                  id="product1"
+                  class="m-auto"
+                  src="./media/images/common.png"
+                  alt=""
+                />
+                <p class="bold">Traditional Half moon</p>
+              </div>
+              <div class="single-products">
+                <img
+                  id="product2"
+                  class="m-auto"
+                  src="./media/images/dulce.png"
+                  alt=""
+                />
+                <p class="bold">Half moon with Dulce de Leche</p>
+              </div>
+              <div class="single-products">
+                <img
+                  id="product3"
+                  class="m-auto"
+                  src="./media/images/cornstarch.png"
+                  alt=""
+                />
+                <p class="bold">Half moon with Cream</p>
+              </div>
+              <div class="single-products">
+                <img
+                  id="product4"
+                  class="m-auto"
+                  src="./media/images/alfajor.png"
+                  alt=""
+                />
+                <p class="bold">Cornstarch Alfajores</p>
+              </div>
+            </div>
+
+            <div class="container-grid-and-order-custom-page">
+              <div id="custom-grid">
+                <!-- <div class="add-traditional"></div> -->
+                <!-- <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt=""> 
+                    <img src="./media/images/common.png" alt="">         -->
+              </div>
+              <form id="form-description" class="description-custom-page m-auto">
+                <span class="mtb">In your basket you have:</span>
+                <div>
+                  <div id="traditional" class="traditional">
+                    <input type="text" class="description-amount-traditional bold" placeholder="0" required="" value="">
+                    <!-- <div class="description-amount-traditional bold">0</div> -->
+                    <div class="description-text-traditional">
+                      Traditional Half moon
+                    </div>
+                  </div>
+
+                  <div id="dulce" class="dulce">
+                    <input type="text" class="description-amount-dulce bold" placeholder="0" required="" value="">
+                    <!-- <div class="description-amount-dulce bold">0</div> -->
+                    <div class="description-text-dulce">
+                      Half moon with Dulce de Leche
+                    </div>
+                  </div>
+                  <div id="cream" class="cream">
+                    <input type="text" class="description-amount-cream bold" placeholder="0" required="" value="">
+                    <!-- <div class="description-amount-cream bold">0</div> -->
+                    <div class="description-text-cream">Half moon cream</div>
+                  </div>
+                  <div id="alfajor" class="alfajor">
+                    <input type="text" class="description-amount-alfajor bold" placeholder="0" required="" value="">
+                    <!-- <div class="description-amount-alfajor bold">0</div> -->
+                    <div class="description-text-alfajor">
+                      Cornstarch Alfajor
+                    </div>
+                  </div>
+                </div>
+                <input class="links-yellow" type="reset" value="Empty basket">
+                <input class="links-brown" type="submit" value="Add to cart">
+                <!-- <div class="links-brown">Add to cart</div> -->
+              </form>
+            </div>
+            <!-- Container of the Grid Ends-->
+          </div>
+          <!--Custom Grid Ends-->
+        </div>
+        <!--Container Ends-->
+      </section>
+
+      <section id="custom-combos-page-img-bg">
+        <div class="custom-combos-page-img-overlay">
+          <div class="container">
+            <div class="custom-combos-page">
+              <!-- <div class="custom-combos-page-img">
+                <img src="media/images/custom.jpg" alt="image" />
+              </div> -->
+              <div class="custom-combos-page-text center-text">
+                <div>
+                  <h1>See our combos.</h1>
+                  <p>Select one of our bundles, quality and price are guaranteed.</p>
+                  <a href="#" class="links-yellow m-2-auto">See the combos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logo">
+            <a href="index.html" class="footer-menu">
+              <!-- <span>Entremasas</span> -->
+              <img src="media/svg/logo-yellow.svg" alt="Logo"/>
+            </a>
+          </div>
+
+          <div class="contact">
+            <!-- <h3>Contact</h3> -->
+            <ul>
+              <li>Willemoesgade 12</li>
+              <li>Tel: +45 91 75 13 46</li>
+              <li>CVR:42751537</li>
+              <li>entremasasdk@gmail.com</li>
+            </ul>
+          </div>
+
+          <ul class="footer-menu">
+            <li><a href="combos.html" class="footer-menu">Combos</a></li>
+            <li>
+              <a href="custom.html" class="footer-menu">Custom your order</a>
+            </li>
+            <li><a href="our-story.html" class="footer-menu">Our story</a></li>
+            <li>
+              <a href="our-specialty.html" class="footer-menu">Our specialty</a>
+            </li>
+            <li><a href="blog.html" class="footer-menu">Blog</a></li>
+            <li><a href="cart.html" class="footer-menu">Cart</a></li>
+          </ul>
+
+          <ul class="footer-menu">
+            <li>
+              <a href="ordering-process.html" class="footer-menu"
+                >Ordering process</a
+              >
+            </li>
+            <li><a href="#" class="footer-menu">Contact</a></li>
+            <li><a href="#" class="footer-menu">FAQs</a></li>
+            <li><a href="#" class="footer-menu">Privacy Policy</a></li>
+            <li><a href="#" class="footer-menu">Terms and Conditions</a></li>
+          </ul>
+
+          <div class="social">
+            <h4>Follow us</h4>
+            <div>
+              <img src="media/svg/facebook.svg" alt="" />
+              <img src="media/svg/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- ".footer" ends-->
+      </div>
+      <!--Container ends-->
+    </footer>
+
+    <script src="js/functions.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

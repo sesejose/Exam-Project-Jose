@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entremasas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/yyj8tak.css" />
+  </head>
+
+  <body class="wrapper">
+    
+    <header class="main-container-header header_bg_content">
+      <div class="container-nav">
+      <div class="container">
+        <nav>
+          <div class="icons-nav">
+            <div class="cart">
+              <a class="icon" href="cart.html">
+                <img src="media/svg/bag.svg" alt="Icon Menu" />
+              </a>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <a class="icon" onclick="openmenumobile()">
+              <img src="media/svg/bars-solid.svg" alt="Icon Menu" />
+            </a>
+          </div>
+          <!-- </div> -->
+
+          <div id="logo" class="logo">
+            <!-- <a href="index.html" class="logo"><span>Entremasas</span></a> -->
+            <a href="index.html"><img src="media/svg/logo.svg" alt="Logo" /></a>
+          </div>
+
+          <ul id="mainmenu">
+            <!--Mobile-->
+            <li><a href="combos.html" class="mainmenu">Combos</a></li>
+            <li>
+              <a href="custom.html" class="mainmenu">Custom your order</a>
+            </li>
+            <li>
+              <a href="our-specialty.html" class="mainmenu">Our specialty</a>
+            </li>
+            <li>
+              <a href="ordering-process.html" class="mainmenu"
+                >Ordering process</a
+              >
+            </li>
+            <li><a href="our-story.html" class="mainmenu">Our story</a></li>
+            <li><a href="cart.html" class="mainmenu">Cart</a></li>
+            <li><a href="blog.html" class="mainmenu">Blog</a></li>
+          </ul>
+
+          <ul id="menu">
+            <!--Desktop-->
+            <li><a href="combos.html" class="menu">Combos</a></li>
+            <li><a href="custom.html" class="menu">Custom your order</a></li>
+            <li>
+              <a href="ordering-process.html" class="menu">Ordering process</a>
+            </li>
+          </ul>
+          <ul id="menu2">
+            <li>
+              <a href="our-specialty.html" class="menu">Our specialty</a>
+            </li>
+            <li><a href="our-story.html" class="menu">Our story</a></li>
+            <li><a href="blog.html" class="menu">Blog</a></li>
+            <li>
+              <a class="icon menu" href="cart.html">
+                <img src="media/svg/bag.svg" alt="Icon Menu"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Conainer Ends-->
+
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <!--SLIDER PROGRESS BAR START-->
+      <div class="slider-checkout">
+        <div class="slide-line"></div>
+        <div class="progress-circles">
+          <div>
+            <div class="progress-circle" id="circle1"></div>
+            <span class="line1 line-progress"></span>
+          </div>
+          <div>
+            <div class="progress-circle" id="circle2"></div>
+            <span class="line2 line-progress"></span>
+          </div>
+          <div>
+            <div class="progress-circle" id="circle3"></div>
+            <span class="line3 line-progress"></span>
+          </div>
+          <div>
+            <div class="progress-circle" id="circle4"></div>
+            <span class="line3 line-progress"></span>
+          </div>
+          <div>
+            <div class="progress-circle" id="circle5"></div>
+          </div>
+        </div>
+      </div>
+      <!--SLIDER PROGRESS BAR END-->
+
+      <!--DELIVERY OPTIONS BUTTONS START-->
+      <section class="" id="checkout-step1">
+        <!--section-frist-cheackout-->
+        <div class="container">
+          <div class="heading center-text">
+            <h1>Checkout</h1>
+          </div>
+          <div class="buttons-methods">
+            <button onclick=" changeMethod()" class="links-brown m0i">
+              PICKING UP
+            </button>
+            <div class="middle-line"></div>
+            <button onclick="changeMethod2()" class="links-brown m0i">
+              DELIVERY HOME
+            </button>
+          </div>
+        </div>
+        <!--Container ends-->
+      </section>
+      <!--DELIVERY OPTIONS BUTTONS END-->
+
+      <!---////////////////////////////   METHOD 1 (Delivery Home) ///////////////////////-->
+
+      <!-----------------------   Delivery Cost ------------------>
+
+      <div id="method1" class="hidden">
+        <div class="section-frist-cheackout home-delivery-option">
+          <h2>Delivery Options</h2>
+          <div class="delivery-options">
+            <label>
+              <input
+                onclick="window.location.href='#cheackout-step2-option1'"
+                id="next-button-cheackout1-method2"
+                type="radio"
+                name="options"
+                checked
+              />
+              <img src="media/svg/just-eat-logo.svg" alt="logo" />
+            </label>
+            <label>
+              <input
+                onclick="window.location.href='#cheackout-step2-option1'"
+                id="next-button-cheackout1"
+                type="radio"
+                name="options"
+                checked
+              />
+              <img src="media/svg/wolt-logo.svg" alt="" />
+            </label>
+          </div>
+        </div>
+
+        <div
+          class="home-delivery-option step2 h100vh"
+          id="cheackout-step2-option1"
+        >
+          <section class="middle-first-checkout">
+            <div class="container">
+              <div class="delivery-cost">
+                <div class="heading center-text">
+                  <h2>Delivery Cost</h2>
+                </div>
+
+                <div class="cont-comb-container">
+                  <div class="cont">
+                    <div class="comb">
+                      <div>
+                        <input type="radio" name="option" />
+                        <label>Delivering today 13 May kl.10:00</label>
+                      </div>
+                      <div>
+                        <p>DKK 49.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cont">
+                    <div class="comb">
+                      <div>
+                        <input type="radio" name="option" />
+                        <label>Delivered by Monday 14 May kl.15:30</label>
+                      </div>
+                      <div>
+                        <p>DKK 29.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="split-line"></div> -->
+                  <hr />
+
+                  <div class="cont">
+                    <div class="comb">
+                      <div><h4>TOTAL</h4></div>
+                      <div><p>DKK 345.00</p></div>
+                    </div>
+                  </div>
+                </div>
+                <!--cont-comb-container ends-->
+              </div>
+            </div>
+            <!--Container ends-->
+          </section>
+
+          <div class="cheackout-buttons">
+            <button
+              id="prev-button-time-picking-method1"
+              onclick="window.location.href='#checkout-step1'"
+            >
+              Delivery options
+            </button>
+            <button
+              id="next-button-summary"
+              onclick="window.location.href='#cheackout-step2'"
+            >
+              Summary
+            </button>
+          </div>
+        </div>
+
+        <!---------------------   Order Summary (Delivery)  ------------------------->
+
+        <div class="home-delivery-option h100vh">
+          <section class="middle-first-checkout" id="cheackout-step2">
+            <div class="container">
+              <div class="order-summary-checkout">
+                <h2>Order summary</h2>
+              </div>
+
+              <div class="cont-comb-container">
+                <div class="cont">
+                  <div class="comb">
+                    <div>
+                      <h4>Combo 1</h4>
+                    </div>
+                    <div>
+                      <p>
+                        3 Medialunas w/creme, 3 Medialunas w/Dulce de Leche, 3
+                        common Medialunas, 3 Alfajores de maizena)
+                      </p>
+                    </div>
+                    <div>
+                      <p>DKK 250.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cont">
+                  <div class="comb">
+                    <div>
+                      <h4>Delivery</h4>
+                    </div>
+                    <div>
+                      <p>Wolt</p>
+                    </div>
+                    <div>
+                      <p>DKK 39.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="split-line"></div> -->
+                <hr />
+
+                <div class="cont">
+                  <div class="comb">
+                    <div><h4>TOTAL</h4></div>
+                    <div><p>DKK 289.00</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Container ends-->
+          </section>
+
+          <div class="cheackout-buttons">
+            <button
+              id="prev-button-time"
+              onclick="window.location.href='#cheackout-step2-option1'"
+            >
+              DELIVERY TIME
+            </button>
+            <button
+              id="next-button-payment"
+              onclick="window.location.href='#cheackout-step3'"
+            >
+              GO TO PAYMENT
+            </button>
+          </div>
+        </div>
+
+        <!--------------------  Choose your payment method (Delivery)   ---------------->
+
+        <div class="home-delivery-option h100vh" id="cheackout-step3">
+          <section class="end-first-checkout">
+            <div class="container">
+              <div class="choose-payment-method">
+                <div class="heading center-text">
+                  <h2>Choose your payment method</h2>
+                </div>
+                <div class="payment-section">
+                  <div class="payment-method-container">
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/visa-logo.svg" alt="" />
+                      <span>Credit Card</span>
+                    </div>
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/mobile-pay-logo.svg" alt="" />
+                      <span>Mobile Pay</span>
+                    </div>
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/paypal-logo.svg" alt="" />
+                      <span>PayPal</span>
+                    </div>
+                  </div>
+
+                  <div class="form-container">
+                    <form class="form-first-checkout">
+                      <div class="form-item">
+                        <label>Card holder name *</label>
+                        <input type="text" class="fname" />
+                      </div>
+                      <div class="form-item">
+                        <label>Card number *</label>
+                        <input type="number" class="cardnr" />
+                      </div>
+                      <div class="form-item">
+                        <label> Expire date *</label>
+                        <input type="month" class="cardnr" />
+                      </div>
+                      <div class="form-item">
+                        <label> CVV *</label>
+                        <input type="number" class="cardcvv" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="cheackout-buttons">
+                  <button
+                    id="prev-button-summary"
+                    onclick="window.location.href='#cheackout-step2'"
+                  >
+                    ORDER SUMMARY
+                  </button>
+                  <button
+                    id="next-button-finish-pay"
+                    onclick="window.location.href='#checkout-final-step'"
+                  >
+                    PAY
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Container ends -->
+          </section>
+        </div>
+
+        <!-------------------->
+      </div>
+      <!--Close Method 1-->
+
+      <!--////////////////////////////  METHOD 2 (Picking up) //////////////////////////////-->
+
+      <!------------------Picking points  ---------------------->
+
+      <div id="method2" class="hidden">
+        <section class="section-frist-cheackout picking-up-option">
+          <div class="container">
+            <div class="heading center-text">
+              <h2>Picking points</h2>
+            </div>
+            <div class="cheackout-buttons plr">
+              <button
+                onclick="window.location.href='#cheackout-step2-option2'"
+                id="next-button-cheackout2"
+              >
+                Willemoesgade 12, 2tv. 2100 København
+              </button>
+              <button
+                id="next-button-cheackout2-method2"
+                onclick="window.location.href='#cheackout-step2-option2'"
+              >
+                Gammel Kongevej 10, 1610 København V
+              </button>
+            </div>
+          </div>
+          <!--Container ends-->
+        </section>
+
+        <!----------------------------Picking Time Table ------------------>
+
+        <section class="h100vh picking-time-table" id="cheackout-step2-option2">
+          <div class="container">
+            <div class="heading center-text">
+              <h2>Pick time and date</h2>
+            </div>
+            <div class="picking-time-date-container">
+              <div class="calendar">
+                <div class="heading center-text">
+                  <h3>Picking date</h3>
+                </div>
+
+                <div>
+                  <ul class="weekdays">
+                    <li><p>Mo</p></li>
+                    <li><p>Tu</p></li>
+                    <li><p>We</p></li>
+                    <li><p>Th</p></li>
+                    <li><p>Fr</p></li>
+                    <li><p>Sa</p></li>
+                    <li><p>Su</p></li>
+                  </ul>
+
+                  <ul class="days">
+                    <li><p>1</p></li>
+                    <li><p>2</p></li>
+                    <li><p>3</p></li>
+                    <li><p>4</p></li>
+                    <li><p>5</p></li>
+                    <li><p>6</p></li>
+                    <li><p>7</p></li>
+                    <li><p>8</p></li>
+                    <li><p>9</p></li>
+                    <li><p class="active">10</p></li>
+                    <li><p>11</p></li>
+                    <li><p>12</p></li>
+                    <li><p>13</p></li>
+                    <li><p>14</p></li>
+                    <li><p>15</p></li>
+                    <li><p>16</p></li>
+                    <li><p>17</p></li>
+                    <li><p>18</p></li>
+                    <li><p>19</p></li>
+                    <li><p>20</p></li>
+                    <li><p>21</p></li>
+                    <li><p>22</p></li>
+                    <li><p>23</p></li>
+                    <li><p>24</p></li>
+                    <li><p>25</p></li>
+                    <li><p>26</p></li>
+                    <li><p>27</p></li>
+                    <li><p>28</p></li>
+                    <li><p>29</p></li>
+                    <li><p>30</p></li>
+                    <li><p>31</p></li>
+                  </ul>
+                </div>
+                <!-- <table class="table-date">
+                  <tr>
+                    <th>MO</th>
+                    <th>TU</th>
+                    <th>WE</th>
+                    <th>TH</th>
+                    <th>FR</th>
+                    <th>SA</th>
+                    <th>SU</th>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td tabindex="100">1</td>
+                    <td tabindex="100">2</td>
+                    <td tabindex="100">3</td>
+                    <td tabindex="100">4</td>
+                    <td tabindex="100">5</td>
+                  </tr>
+                  <tr>
+                    <td tabindex="100">6</td>
+                    <td tabindex="100">7</td>
+                    <td tabindex="100">8</td>
+                    <td tabindex="100">9</td>
+                    <td tabindex="100">10</td>
+                    <td tabindex="100">11</td>
+                    <td tabindex="100">12</td>
+                  </tr>
+
+                  <tr>
+                    <td tabindex="100">13</td>
+                    <td tabindex="100">14</td>
+                    <td tabindex="100">15</td>
+                    <td tabindex="100">16</td>
+                    <td tabindex="100">17</td>
+                    <td tabindex="100">18</td>
+                    <td tabindex="100">19</td>
+                  </tr>
+
+                  <tr>
+                    <td tabindex="100">20</td>
+                    <td tabindex="100">21</td>
+                    <td tabindex="100">22</td>
+                    <td tabindex="100">23</td>
+                    <td tabindex="100">24</td>
+                    <td tabindex="100">25</td>
+                    <td tabindex="100">26</td>
+                  </tr>
+                  <tr>
+                    <td tabindex="100">27</td>
+                    <td tabindex="100">28</td>
+                    <td tabindex="100">29</td>
+                    <td tabindex="100">30</td>
+                    <td tabindex="100">31</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table> -->
+              </div>
+              <div class="hours">
+                <div class="heading center-text">
+                  <h3>Picking time</h3>
+                </div>
+
+                <div>
+                  <ul class="times">
+                    <li><p>09:00</p></li>
+                    <li><p>09:15</p></li>
+                    <li><p>09:30</p></li>
+                    <li><p>09:45</p></li>
+                    <li><p>10:00</p></li>
+                    <li><p>10:15</p></li>
+                    <li><p>10:30</p></li>
+                    <li><p>10:45</p></li>
+                    <li><p>11:00</p></li>
+                    <li><p>11:15</p></li>
+                    <li><p>11:30</p></li>
+                    <li><p>11:45</p></li>
+                    <li><p>12:00</p></li>
+                    <li><p>12:15</p></li>
+                    <li><p>12:30</p></li>
+                    <li><p>12:45</p></li>
+                    <li><p>13:00</p></li>
+                    <li><p>13:15</p></li>
+                    <li><p>13:30</p></li>
+                    <li><p>13:45</p></li>
+                    <li><p>14:00</p></li>
+                  </ul>
+                </div>
+                <!-- <table class="table-time">
+                  <tr>
+                    <td tabindex="1">09:00</td>
+                    <td tabindex="1">09:30</td>
+                    <td tabindex="1">09:45</td>
+                    <td tabindex="1">10:00</td>
+                    <td tabindex="1">10:15</td>
+                    <td tabindex="1">10:30</td>
+                  </tr>
+                  <tr>
+                    <td tabindex="1">10:45</td>
+                    <td tabindex="1">11:00</td>
+                    <td tabindex="1">11:15</td>
+                    <td tabindex="1">11:30</td>
+                    <td tabindex="1">11:45</td>
+                    <td tabindex="1">12:00</td>
+                  </tr>
+                  <tr>
+                    <td tabindex="1">12:10</td>
+                    <td tabindex="1">12:20</td>
+                    <td tabindex="1">12:35</td>
+                    <td tabindex="1">12:40</td>
+                    <td tabindex="1">12:50</td>
+                    <td tabindex="1">13:00</td>
+                  </tr>
+                </table> -->
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="center-text">
+                <div class="date-and-time">
+                  <h4>Friday 27 Maj, 9:00 am Willemoesgade 12</h4>
+                </div>
+              </div>
+            </div>
+            <!--Container ends-->
+
+            <!------------------ Delivery options OR Go to Sumammary ------------------->
+
+            <div class="container">
+              <div class="cheackout-buttons">
+                <button
+                  id="prev-button-delivery2"
+                  onclick="window.location.href='#cheackout-step1'"
+                >
+                  DELIVERY OPTIONS
+                </button>
+                <button
+                  id="next-button-payment2"
+                  onclick="window.location.href='#cheackout-summary'"
+                >
+                  GO TO SUMMARY
+                </button>
+              </div>
+            </div>
+            <!--Container ends-->
+          </div>
+          <!--Container ends-->
+        </section>
+
+        <!-------------------- Order Summary  (Picking)  --------------->
+
+        <div class="">
+          <section class="middle-first-checkout" id="cheackout-summary">
+            <div class="container">
+              <div class="order-summary-checkout">
+                <div class="heading center-text">
+                  <h2>Order summary</h2>
+                </div>
+
+                <div class="cont-comb-container">
+                  <div class="cont">
+                    <div class="comb">
+                      <div>
+                        <h4>Combo 1</h4>
+                      </div>
+                      <div>
+                        <p>
+                          (3 Medialunas w/creme, 3 Medialunas w/Dulce de Leche,
+                          3 common Medialunas, 3 Alfajores de maizena)
+                        </p>
+                      </div>
+                      <div>
+                        <p>DKK 250.00</p>
+                      </div>
+                    </div>
+                    <!--Comb end-->
+                  </div>
+                  <!--Cont end-->
+
+                  <div class="cont">
+                    <div class="comb">
+                      <div>
+                        <h4>Delivery</h4>
+                      </div>
+                      <div>
+                        <p>
+                          Pick up point : (Friday 27 Maj, 9:00 am Willemoesgade
+                          12 )
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="split-line"></div> -->
+                  <hr />
+
+                  <div class="cont">
+                    <div class="comb">
+                      <div><h4>TOTAL</h4></div>
+                      <div><p>DKK 250.00</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Container ends-->
+          </section>
+        </div>
+
+        <!------------------   Back to Time OR Pay   ----------------------->
+
+        <div class="container">
+          <div class="cheackout-buttons">
+            <button
+              id="prev-button-time-picker"
+              onclick="window.location.href='#cheackout-step2-option2'"
+            >
+              DELIVERY TIME
+            </button>
+            <button
+              id="next-button-payment-method2"
+              onclick="window.location.href='#cheackout-step3-method2'"
+            >
+              GO TO PAYMENT
+            </button>
+          </div>
+        </div>
+
+        <!----------------->
+
+        <div id="cheackout-step3-method2">
+          <section class="end-first-checkout">
+            <div class="container">
+              <div class="choose-payment-method">
+                <div class="heading center-text">
+                  <h2>Choose your payment method</h2>
+                </div>
+                <div class="payment-section">
+                  <div class="payment-method-container">
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/visa-logo.svg" alt="" />
+                      <span>Credit Card</span>
+                    </div>
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/mobile-pay-logo.svg" alt="" />
+                      <span>Mobile Pay</span>
+                    </div>
+                    <div class="single-payment-method-container">
+                      <img src="media/svg/paypal-logo.svg" alt="" />
+                      <span>PayPal</span>
+                    </div>
+                  </div>
+
+                  <div class="form-container">
+                    <form class="form-first-checkout">
+                      <div class="form-item">
+                        <label>Card holder name *</label>
+                        <input type="text" class="fname" />
+                      </div>
+                      <div class="form-item">
+                        <label>Card number *</label>
+                        <input type="number" class="cardnr" />
+                      </div>
+                      <div class="form-item">
+                        <label> Expire date *</label>
+                        <input type="month" class="cardnr" />
+                      </div>
+                      <div class="form-item">
+                        <label> CVV *</label>
+                        <input type="number" class="cardcvv" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="cheackout-buttons">
+                  <button
+                    id="prev-button-summary-methode2"
+                    onclick="window.location.href='#cheackout-summary'"
+                  >
+                    ORDER SUMMARY
+                  </button>
+                  <button
+                    id="next-button-finish-pay-method2"
+                    onclick="window.location.href='#checkout-final-step'"
+                  >
+                    PAY
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Container ends-->
+          </section>
+        </div>
+
+        <!-------------------->
+      </div>
+      <!-- Method 2 ends -->
+
+      <!--LAST PAGE FINISH ORDERING START-->
+
+      <div class="h100vh">
+        <section class="thanks-page" id="checkout-final-step">
+          <div class="container">
+            <div class="heading center-text">
+              <h1>Thak you for your order!</h1>
+            </div>
+            <!-- <img src="media/images/thanks.jpg" alt="" /> -->
+            <div class="cheackout-buttons">
+              <button
+                id="prev-button-delivery"
+                class="links"
+                onclick="window.location.href='combos.html'"
+              >
+                CONTINUE SHOPPING
+              </button>
+            </div>
+          </div>
+          <!--Container ends-->
+        </section>
+      </div>
+      <!--LAST PAGE FINISH ORDERING END-->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logo">
+            <a href="index.html" class="footer-menu">
+              <!-- <span>Entremasas</span> -->
+              <img src="media/svg/logo-yellow.svg" alt="Logo"/>
+            </a>
+          </div>
+
+          <div class="contact">
+            <!-- <h3>Contact</h3> -->
+            <ul>
+              <li>Willemoesgade 12</li>
+              <li>Tel: +45 91 75 13 46</li>
+              <li>CVR:42751537</li>
+              <li>entremasasdk@gmail.com</li>
+            </ul>
+          </div>
+
+          <ul class="footer-menu">
+            <li><a href="combos.html" class="footer-menu">Combos</a></li>
+            <li>
+              <a href="custom.html" class="footer-menu">Custom your order</a>
+            </li>
+            <li><a href="our-story.html" class="footer-menu">Our story</a></li>
+            <li>
+              <a href="our-specialty.html" class="footer-menu">Our specialty</a>
+            </li>
+            <li><a href="blog.html" class="footer-menu">Blog</a></li>
+            <li><a href="cart.html" class="footer-menu">Cart</a></li>
+          </ul>
+
+          <ul class="footer-menu">
+            <li>
+              <a href="ordering-process.html" class="footer-menu"
+                >Ordering process</a
+              >
+            </li>
+            <li><a href="#" class="footer-menu">Contact</a></li>
+            <li><a href="#" class="footer-menu">FAQs</a></li>
+            <li><a href="#" class="footer-menu">Privacy Policy</a></li>
+            <li><a href="#" class="footer-menu">Terms and Conditions</a></li>
+          </ul>
+
+          <div class="social">
+            <h4>Follow us</h4>
+            <div>
+              <img src="media/svg/facebook.svg" alt="" />
+              <img src="media/svg/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- ".footer" ends-->
+      </div>
+      <!--Container ends-->
+    </footer>
+
+    <script src=" ./js/checkout-first.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
