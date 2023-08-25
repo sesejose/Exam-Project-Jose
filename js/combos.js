@@ -1,4 +1,4 @@
-const url = "http://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/combo?_embed";
+const url = "http://entremasas.grapixmo.com/wp-json/wp/v2/combo?_embed";
 
 fetch(url)
   .then((response) => {
@@ -22,15 +22,11 @@ function showProduct(combo) {
   copy.querySelector(".title").textContent = combo.title.rendered;
   copy.querySelector(".excerpt").textContent = combo.description;
   copy.querySelector(".combo-price").textContent = combo.price;
-  copy.querySelector(
-    ".combos-img-container"
-  ).style.backgroundImage = `url(${combo.image.guid})`;
+  copy.querySelector(".combos-img-container").style.backgroundImage = `url(${combo.image.guid})`;
 
   //********* Modal *********/
 
-  copy
-    .querySelector(".combos-img-container")
-    .addEventListener("click", openModal);
+  copy.querySelector(".combos-img-container").addEventListener("click", openModal);
 
   // copy
   //   .querySelector(".price-add-to-card a")
