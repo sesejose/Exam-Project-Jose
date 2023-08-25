@@ -1,4 +1,4 @@
-const url = "http://entremasas.grapixmo.com/wp-json/wp/v2/combo?_embed";
+const url = "https://entremasas.grapixmo.com/wp-json/wp/v2/combo?_embed";
 
 fetch(url)
   .then((response) => {
